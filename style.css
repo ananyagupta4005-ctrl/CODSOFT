@@ -1,6 +1,4 @@
-/* ============================================
-   GLOBAL STYLES
-============================================ */
+/* GLOBAL STYLES */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -31,9 +29,7 @@ html {
 }
 
 
-/* ============================================
-   NAVBAR
-============================================ */
+/* NAVBAR*/
 
 .navbar {
   display: flex;
@@ -73,10 +69,7 @@ html {
 }
 
 
-/* ============================================
-   HERO SECTION
-============================================ */
-
+/*HERO SECTION*/
 .hero {
   display: flex;
   justify-content: space-between;
@@ -118,9 +111,7 @@ html {
 }
 
 
-/* ============================================
-   GENERAL SECTION STYLES
-============================================ */
+/*GENERAL SECTION STYLES*/
 
 .section {
   padding: 70px 80px;
@@ -149,9 +140,7 @@ html {
 }
 
 
-/* ============================================
-   ABOUT SECTION
-============================================ */
+/*ABOUT SECTION*/
 
 .about-text {
   font-size: 1rem;
@@ -161,9 +150,7 @@ html {
 }
 
 
-/* ============================================
-   SKILLS SECTION
-============================================ */
+/*SKILLS SECTION*/
 
 .skills-list {
   list-style: none;
@@ -184,9 +171,7 @@ html {
 }
 
 
-/* ============================================
-   PROJECTS SECTION
-============================================ */
+/*PROJECTS SECTION*/
 
 .project-card {
   background-color: #111d2e;
@@ -219,9 +204,7 @@ html {
 }
 
 
-/* ============================================
-   RESUME SECTION
-============================================ */
+/*RESUME SECTION*/
 
 #resume p {
   color: var(--text-muted);
@@ -245,9 +228,7 @@ html {
 }
 
 
-/* ============================================
-   CONTACT SECTION
-============================================ */
+/*CONTACT SECTION*/
 
 #contact p {
   font-size: 1rem;
@@ -265,9 +246,7 @@ html {
 }
 
 
-/* ============================================
-   FOOTER
-============================================ */
+/*FOOTER*/
 
 .footer {
   text-align: center;
