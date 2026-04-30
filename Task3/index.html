@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Calculator</title>
+
+  <!-- Google Font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="calculator">
+
+    <h1>🧮 Calc!</h1>
+
+    <!-- DISPLAY SCREEN -->
+    <div class="screen">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+      <!-- ROW 1 -->
+      <button class="clear"   onclick="clearAll()">AC</button>
+      <button class="special" onclick="toggleSign()">+/-</button>
+      <button class="special" onclick="percent()">%</button>
+      <button class="op"      onclick="setOperator('/')">÷</button>
+
+      <!-- ROW 2 -->
+      <button class="num" onclick="pressDigit('7')">7</button>
+      <button class="num" onclick="pressDigit('8')">8</button>
+      <button class="num" onclick="pressDigit('9')">9</button>
+      <button class="op"  onclick="setOperator('*')">×</button>
+
+      <!-- ROW 3 -->
+      <button class="num" onclick="pressDigit('4')">4</button>
+      <button class="num" onclick="pressDigit('5')">5</button>
+      <button class="num" onclick="pressDigit('6')">6</button>
+      <button class="op"  onclick="setOperator('-')">−</button>
+
+      <!-- ROW 4 -->
+      <button class="num" onclick="pressDigit('1')">1</button>
+      <button class="num" onclick="pressDigit('2')">2</button>
+      <button class="num" onclick="pressDigit('3')">3</button>
+      <button class="op"  onclick="setOperator('+')">+</button>
+
+      <!-- ROW 5 -->
+      <button class="num zero" onclick="pressDigit('0')">0</button>
+      <button class="num"      onclick="pressDot()">.</button>
+      <button class="eq"       onclick="calculate()">=</button>
+
+    </div>
+
+    <p class="footer">Built with HTML + CSS + JS ✨</p>
+  </div>
+
+  <!-- JS file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
