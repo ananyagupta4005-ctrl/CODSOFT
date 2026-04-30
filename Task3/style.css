@@ -1,0 +1,120 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: bgMove 8s ease infinite;
+  font-family: 'Baloo 2', cursive;
+}
+
+@keyframes bgMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* CALCULATOR BOX */
+.calculator {
+  background: white;
+  border-radius: 30px;
+  padding: 28px;
+  width: 320px;
+  box-shadow: 8px 8px 0px #ffb347, 16px 16px 0px #f78fb3;
+}
+
+.calculator h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #ff6b6b;
+  margin-bottom: 16px;
+}
+
+/* SCREEN */
+.screen {
+  background: #1e1e2e;
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.expression {
+  font-size: 13px;
+  color: #888;
+  min-height: 18px;
+}
+
+.result {
+  font-size: 36px;
+  font-weight: 800;
+  color: #f8f8f2;
+}
+
+/* BUTTON GRID */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* ALL BUTTONS */
+button {
+  height: 60px;
+  border: none;
+  border-radius: 14px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: none !important;
+}
+
+/* NUMBER BUTTONS */
+.num     { background: #f0f0f0; color: #333; box-shadow: 0 4px 0 #ccc; }
+.num:hover { background: #e0e0e0; }
+
+/* OPERATOR BUTTONS */
+.op      { background: #a29bfe; color: white; box-shadow: 0 4px 0 #6c5ce7; }
+.op:hover { background: #b2acfd; }
+
+/* EQUALS */
+.eq      { background: #fd79a8; color: white; box-shadow: 0 4px 0 #e84393; }
+.eq:hover { background: #fe8fb5; }
+
+/* CLEAR */
+.clear   { background: #ff7675; color: white; box-shadow: 0 4px 0 #d63031; }
+.clear:hover { background: #ff8585; }
+
+/* SPECIAL (+/- and %) */
+.special { background: #55efc4; color: #2d3436; box-shadow: 0 4px 0 #00b894; }
+.special:hover { background: #6afad3; }
+
+/* ZERO (wide button) */
+.zero { grid-column: span 2; }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #aaa;
+}
