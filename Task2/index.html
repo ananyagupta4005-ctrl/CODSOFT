@@ -3,67 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ananya Gupta | Portfolio</title>
-  <link rel="stylesheet" href="style.css" >
+  <title>Ananya Gupta | Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div>
-  <h2>My Projects</h2>
-  <a href="Task2/index.html">👉 View Landing Page</a>
-</div>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-container">
-      <div class="nav-left">Ananya Gupta</div>
-      <div class="nav-right">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+      <div class="logo">AG<span>.</span></div>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </div>
+      <a href="../index.html" class="back-btn">← Back to Portfolio</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">ANANYA</div>
     <div class="container hero-container">
-      <div class="hero-text">
-        <h1>Hello, I'm <span>Ananya</span></h1>
-        <h3>BTech CSE Student | Learning Web Development</h3>
-        <p>
-          Passionate about technology and problem-solving.<br>
-          Exploring web development while building hands-on skills in programming.
-        </p>
-        <a href="#" class="btn">Hire Me</a>
+      <div class="hero-badge">✦ Available for Internship</div>
+      <h1>Crafting <em>Digital</em><br />Experiences</h1>
+      <p>BTech CSE Student · Web Developer in the Making · Problem Solver</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-primary">See My Work</a>
+        <a href="#contact" class="btn-secondary">Let's Connect</a>
       </div>
-      <div class="hero-img">
-        <img src="[via.placeholder.com](https://via.placeholder.com/300x300)" alt="Profile Image" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <div class="container about-container">
-      <div class="about-img">
-        <img src="[via.placeholder.com](https://via.placeholder.com/350x350)" alt="About Image" />
-      </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm a BTech CSE student and beginner in web development.  
-          I’m currently learning C, HTML, CSS, and DSA to strengthen my foundation in technology.  
-          My goal is to become a skilled full-stack developer and contribute to impactful projects.
-        </p>
-        <a href="#" class="btn">Download Resume</a>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Curiosity</span>
+        </div>
       </div>
     </div>
+    <div class="hero-scroll">scroll down ↓</div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <section class="skills" id="skills">
     <div class="container">
-      <p>&copy; 2026 Ananya Gupta. All rights reserved.</p>
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2>Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup, structured layouts, accessible web pages</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Styling, Flexbox, Grid, responsive design principles</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>C Programming</h3>
+          <p>Core programming logic, data types, functions & pointers</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>DSA</h3>
+          <p>Arrays, linked lists, sorting algorithms & problem solving</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2>My Projects</h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-card featured">
+          <div class="work-num">01</div>
+          <div class="work-content">
+            <span class="work-tag">HTML · CSS</span>
+            <h3>Personal Portfolio</h3>
+            <p>A fully responsive personal portfolio website showcasing my skills, projects, and journey as a web developer.</p>
+            <a href="../index.html" class="work-link">View Project →</a>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-num">02</div>
+          <div class="work-content">
+            <span class="work-tag">HTML · CSS</span>
+            <h3>Landing Page</h3>
+            <p>A creative and modern landing page built with clean HTML & CSS — this very page you're on!</p>
+            <a href="#hero" class="work-link">You're Here →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-strip">
+    <div class="container strip-container">
+      <div class="strip-text">
+        <span class="section-tag">A Little About Me</span>
+        <h2>Passionate. Curious. Always Learning.</h2>
+        <p>I'm Ananya Gupta, a BTech Computer Science student with a deep interest in web development. I believe in learning by building — every project teaches me something new.</p>
+        <a href="../ananya gupta.pdf" download class="btn-primary">Download Resume</a>
+      </div>
+      <div class="strip-card">
+        <div class="card-inner">
+          <div class="card-avatar">AG</div>
+          <h4>Ananya Gupta</h4>
+          <p>BTech CSE · Web Dev</p>
+          <div class="card-tags">
+            <span>Open to Work</span>
+            <span>Internship Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Let's Work Together</h2>
+      <p>Have an opportunity, project, or just want to say hi? My inbox is always open!</p>
+      <a href="mailto:ananya@example.com" class="btn-primary big">Say Hello 👋</a>
+      <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">AG<span>.</span></div>
+      <p>Designed & Built by Ananya Gupta · 2026</p>
+      <a href="#hero" class="back-top">↑ Back to Top</a>
     </div>
   </footer>
 
