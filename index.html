@@ -9,89 +9,162 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="container nav-container">
-      <div class="nav-left">Ananya Gupta</div>
-      <div class="nav-right">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero" id="home">
-    <div class="container hero-container">
-      <div class="hero-text">
-        <p class="hero-tag">👋 Welcome to my portfolio</p>
-        <h1>Hello, I'm <span>Ananya</span></h1>
-        <h3>BTech CSE Student | Aspiring Web Developer</h3>
-        <p>Passionate about technology and problem-solving.<br />
-        Exploring web development while building hands-on skills in programming.</p>
-        <div class="hero-btns">
-          <a href="ananya gupta.pdf" class="btn" download>Download Resume</a>
-          <a href="#contact" class="btn btn-outline">Hire Me</a>
+  <!-- HEADER -->
+  <header class="header" id="home">
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">Ananya Gupta</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-      <div class="hero-img">
-        <img src="ananya.jpeg" alt="Ananya Gupta" onerror="this.src='https://via.placeholder.com/300x300?text=Ananya'" />
+    </nav>
+    <div class="container header-container">
+      <div class="header-text">
+        <p class="tag">👋 Hi there, I'm</p>
+        <h1>Ananya <span>Gupta</span></h1>
+        <h3>BTech CSE Student | Aspiring Web Developer</h3>
+        <p>Passionate about technology and problem-solving. Exploring web development while building hands-on skills in programming.</p>
+        <div class="header-btns">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="#projects" class="btn btn-outline">View Work</a>
+        </div>
+      </div>
+      <div class="header-img">
+        <img src="ananya.jpeg" alt="Ananya Gupta" onerror="this.src='https://via.placeholder.com/300x300?text=AG'" />
       </div>
     </div>
-  </section>
+  </header>
 
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about-container">
       <div class="about-img">
-        <img src="ananya.jpeg" alt="About Ananya" onerror="this.src='https://via.placeholder.com/350x350?text=Ananya'" />
+        <img src="ananya.jpeg" alt="About Ananya" onerror="this.src='https://via.placeholder.com/350x350?text=AG'" />
       </div>
       <div class="about-text">
+        <span class="section-tag">Who I Am</span>
         <h2>About Me</h2>
-        <p>I'm a BTech CSE student and beginner in web development.
-        I'm currently learning C, HTML, CSS, and DSA to strengthen my foundation in technology.
-        My goal is to become a skilled full-stack developer and contribute to impactful projects.</p>
-        <div class="skills-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>C</span>
-          <span>DSA</span>
-          <span>Problem Solving</span>
+        <p>I'm a BTech Computer Science student and beginner in web development. I'm currently learning C, HTML, CSS, and DSA to strengthen my foundation in technology. My goal is to become a skilled full-stack developer and contribute to impactful projects.</p>
+        <p>I love solving problems and building things that make a difference. Every project is a new learning opportunity for me!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup & structured layouts</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Styling, Flexbox, Grid & responsive design</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>C Programming</h3>
+          <p>Core logic, functions & pointers</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>DSA</h3>
+          <p>Arrays, linked lists & sorting algorithms</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+          <span class="skill-percent">60%</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
+      <span class="section-tag">What I've Built</span>
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <div class="project-icon">🌐</div>
-          <h3>Portfolio Website</h3>
-          <p>A personal portfolio built with HTML & CSS showcasing my skills and journey.</p>
-          <a href="#" class="btn btn-sm">View Project</a>
+          <div class="project-img">🌐</div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio built with HTML & CSS showcasing my skills, projects and journey as a developer.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <a href="#" class="btn btn-sm">View Project</a>
+          </div>
         </div>
         <div class="project-card">
-          <div class="project-icon">🚀</div>
-          <h3>Landing Page</h3>
-          <p>A modern, responsive landing page designed with clean UI/UX principles.</p>
-          <a href="Task2/index.html" class="btn btn-sm">View Project</a>
+          <div class="project-img">🚀</div>
+          <div class="project-info">
+            <h3>Landing Page</h3>
+            <p>A modern responsive landing page designed with clean UI/UX principles using HTML & CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <a href="Task2/index.html" class="btn btn-sm">View Project</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- RESUME -->
+  <section class="resume" id="resume">
+    <div class="container resume-container">
+      <span class="section-tag">My Resume</span>
+      <h2>Download My Resume</h2>
+      <p>Get a detailed overview of my skills, education, and projects in PDF format.</p>
+      <a href="ananya gupta.pdf" class="btn" download>📄 Download Resume</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container contact-container">
-      <h2 class="section-title">Get In Touch</h2>
+      <span class="section-tag">Get In Touch</span>
+      <h2>Contact Me</h2>
       <p>Feel free to reach out for collaborations, internships, or just a friendly hello!</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:ananyagupta4005@gmail.com">ananyagupta4005@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <a href="tel:6394740907">6394740907</a>
+        </div>
+      </div>
       <a href="mailto:ananyagupta4005@gmail.com" class="btn">Say Hello 👋</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <p>&copy; 2026 Ananya Gupta. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
 
