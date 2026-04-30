@@ -2,112 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ananya Gupta | Portfolio</title>
-  <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR SECTION -->
   <nav class="navbar">
-    <!-- Logo / Brand Name on the left -->
-    <div class="nav-logo">PORTFOLIO</div>
-
-    <!-- Navigation menu links in the center/right -->
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="container nav-container">
+      <div class="nav-left">Ananya Gupta</div>
+      <div class="nav-right">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </nav>
 
-
-  <!--HERO SECTION-->
-  <section id="home" class="hero">
-
-    <!-- Left side: Name and tagline -->
-    <div class="hero-text">
-      <h1>Ananya Gupta</h1>
-      <p>Hi! I am a first year student of BTech-CSE</p>
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <p class="hero-tag">👋 Welcome to my portfolio</p>
+        <h1>Hello, I'm <span>Ananya</span></h1>
+        <h3>BTech CSE Student | Aspiring Web Developer</h3>
+        <p>Passionate about technology and problem-solving.<br />
+        Exploring web development while building hands-on skills in programming.</p>
+        <div class="hero-btns">
+          <a href="ananya gupta.pdf" class="btn" download>Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="ananya.jpeg" alt="Ananya Gupta" onerror="this.src='https://via.placeholder.com/300x300?text=Ananya'" />
+      </div>
     </div>
+  </section>
 
-    <!-- Right side: Profile image (circular) -->
-    <div class="hero-image">
-    <img src="ananya.jpeg" alt="Profile Photo of Ananya Gupta" />
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-img">
+        <img src="ananya.jpeg" alt="About Ananya" onerror="this.src='https://via.placeholder.com/350x350?text=Ananya'" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a BTech CSE student and beginner in web development.
+        I'm currently learning C, HTML, CSS, and DSA to strengthen my foundation in technology.
+        My goal is to become a skilled full-stack developer and contribute to impactful projects.</p>
+        <div class="skills-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>C</span>
+          <span>DSA</span>
+          <span>Problem Solving</span>
+        </div>
+      </div>
     </div>
-
   </section>
 
-
-  <!--ABOUT SECTION-->
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      Aspiring Software Developer. Passionate beginner in programming with knowledge of
-      C language and Data Structures &amp; Algorithms. Interested in building real-world projects.
-    </p>
-  </section>
-
-
-  <!--SKILLS SECTION-->
-  <section id="skills" class="section section-alt">
-    <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li>Basics of C programming</li>
-      <li>Learning Data Structures &amp; Algorithms</li>
-      <li>Working on projects</li>
-      <li>Participating in hackathons</li>
-    </ul>
-  </section>
-
-
-  <!--PROJECTS SECTION-->
-  <section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
-
-    <!-- Project Card 1 -->
-    <div class="project-card">
-      <h3>Smart Waste Segregation System</h3>
-      <a href="https://ananyagupta4005-ctrl.github.io/ECOSETU/" target="_blank">
-        View Project →
-      </a>
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio built with HTML & CSS showcasing my skills and journey.</p>
+          <a href="#" class="btn btn-sm">View Project</a>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🚀</div>
+          <h3>Landing Page</h3>
+          <p>A modern, responsive landing page designed with clean UI/UX principles.</p>
+          <a href="Task2/index.html" class="btn btn-sm">View Project</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Project Card 2 -->
-    <div class="project-card">
-      <h3>Internal Ticket Management System</h3>
-      <a href="https://ananyagupta4005-ctrl.github.io/Internal-ticket-management-system/" target="_blank">
-        View Project →
-      </a>
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>Feel free to reach out for collaborations, internships, or just a friendly hello!</p>
+      <a href="mailto:ananyagupta4005@gmail.com" class="btn">Say Hello 👋</a>
     </div>
-
   </section>
 
-
-  <!--RESUME SECTION-->
-  <section id="resume" class="section section-alt">
-    <h2 class="section-title">Resume</h2>
-    <p>Click the button below to download my resume.</p>
-    <!-- Download button linked to resume.pdf -->
-    <a href="ananya gupta.pdf" download class="btn">Download Resume</a>
-  </section>
-
-
-  <!--CONTACT SECTION-->
-  <section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-    <p>📞 Phone: <span class="highlight">6394740907</span></p>
-    <p>📧 Email: <a href="mailto:ananyagupta4005@gmail.com" class="highlight">ananyagupta4005@gmail.com</a></p>
-  </section>
-
-
-  <!--FOOTER-->
   <footer class="footer">
-    <p>© Ananya Gupta</p>
+    <div class="container">
+      <p>&copy; 2026 Ananya Gupta. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
